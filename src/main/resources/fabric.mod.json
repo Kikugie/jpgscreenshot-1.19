@@ -2,37 +2,36 @@
   "schemaVersion": 1,
   "id": "jpgscreenshot",
   "version": "${version}",
-
-  "name": "JPG Screenshot",
-  "description": "Saves all screenshot as JPG, if it works properly",
+  "name": "JPG Screenshot 1.19",
+  "description": "KikuGie's fork of the mod",
   "authors": [
     "spiralhalo"
   ],
   "contact": {
-    "homepage": "https://github.com/spiralhalo/JpgMcScreenshot",
-    "sources": "https://github.com/spiralhalo/JpgMcScreenshot"
+    "homepage": "https://github.com/Kikugie/jpgscreenshot-1.19",
+    "sources": "https://github.com/Kikugie/jpgscreenshot-1.19"
   },
-
   "license": "CC0-1.0",
   "icon": "assets/jpgscreenshot/icon.png",
-
   "environment": "client",
   "entrypoints": {
     "client": [
       "spiralhalo.jpgscreenshot.JpgScreenshotMod"
+    ],
+    "modmenu": [
+      "spiralhalo.jpgscreenshot.config.ModMenuIntegration"
     ]
   },
   "mixins": [
     "jpgscreenshot.mixins.json"
   ],
-
   "depends": {
     "fabricloader": ">=0.11.3",
     "minecraft": [
-      "1.17.x",
-      "1.18.x"
+      "1.19.x"
     ],
-    "java": ">=16"
+    "cloth-config": ">=7.0.69",
+    "java": ">=17"
   },
   "suggests": {
   }
