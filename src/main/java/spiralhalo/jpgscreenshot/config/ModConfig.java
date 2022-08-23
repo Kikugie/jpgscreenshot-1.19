@@ -9,6 +9,7 @@ import me.shedaniel.autoconfig.serializer.JanksonConfigSerializer;
 @Config(name = "jpgscreenshot")
 public class ModConfig implements ConfigData {
 
+    @ConfigEntry.BoundedDiscrete(max = 100, min = 1)
     public int quality = 80;
 
     @ConfigEntry.Gui.Excluded
